@@ -93,12 +93,12 @@ export const Calendar: React.FC<CalendarProps> = ({ week }) => {
                     </tr>
                     <WorkoutRow>
                         <td>Workout</td>
-                        <CalendarWorkoutCell isWorkout={monday.isWorkout} />
-                        <CalendarWorkoutCell isWorkout={tuesday.isWorkout} />
-                        <CalendarWorkoutCell isWorkout={wednesday.isWorkout} />
-                        <CalendarWorkoutCell isWorkout={thursday.isWorkout} />
-                        <CalendarWorkoutCell isWorkout={friday.isWorkout} />
-                        <CalendarWorkoutCell isWorkout={saturday.isWorkout} />
+                        <CalendarWorkoutCell isWorkout={monday.workout} />
+                        <CalendarWorkoutCell isWorkout={tuesday.workout} />
+                        <CalendarWorkoutCell isWorkout={wednesday.workout} />
+                        <CalendarWorkoutCell isWorkout={thursday.workout} />
+                        <CalendarWorkoutCell isWorkout={friday.workout} />
+                        <CalendarWorkoutCell isWorkout={saturday.workout} />
                         <PrintCell>
                             <img src='./images/print.svg' alt='print icon' />
                             <span>Print</span>

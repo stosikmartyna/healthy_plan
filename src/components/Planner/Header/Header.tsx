@@ -4,10 +4,16 @@ import { ArrowIcon, Button, Container, Icon, IconsWrapper, ProteinsWrapper, Slid
 
 interface HeaderProps {
     weekNumber: number;
+    weeksNumbers: number[];
     proteinOptions: ProteinOptions;
+    goToNextWeek: () => void;
+    goToPreviousWeek: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ weekNumber, proteinOptions }) => {
+export const Header: React.FC<HeaderProps> = ({ weekNumber, weeksNumbers, proteinOptions, goToNextWeek, goToPreviousWeek }) => {
+    const isPreviousWeekButtonDisabled = weekNumber === Math.min(...weeksNumbers);
+    const isNextWeekButtonDisabled = weekNumber === Math.max(...weeksNumbers);
+
     return (
         <Container>
             <StepperWrapper>
@@ -15,11 +21,11 @@ export const Header: React.FC<HeaderProps> = ({ weekNumber, proteinOptions }) =>
                 <Stepper />
             </StepperWrapper>
             <SliderWrapper>
-                <Button>
+                <Button onClick={goToPreviousWeek} disabled={isPreviousWeekButtonDisabled}>
                     <ArrowIcon src='/images/arrow_left.svg' alt='arrow left icon' />
                 </Button>
                 <p>Week {weekNumber}</p>
-                <Button>
+                <Button onClick={goToNextWeek} disabled={isNextWeekButtonDisabled}>
                     <ArrowIcon src='/images/arrow_right.svg' alt='arrow right icon' />
                 </Button>
             </SliderWrapper>

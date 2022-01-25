@@ -7,7 +7,7 @@ export interface DailyMeal {
 interface DailyPlan {
     day: number;
     carb: 'low' | 'high';
-    isWorkout: boolean;
+    workout: boolean;
     breakfast: DailyMeal;
     lunch: DailyMeal;
     dinner: DailyMeal;
@@ -44,5 +44,5 @@ export interface HealthyPlan {
         avatar: string;
     };
     proteinOptions: ProteinOptions;
-    week: Week,
+    weeks: Week[],
 }
