@@ -1,0 +1,201 @@
+{        
+    "user": {
+        "name": "Olivia Wilde",
+        "avatar": "/images/user_img.png"
+    },
+    "proteinOptions": {
+        "vege": true,
+        "dairy": true,
+        "meat": true,
+        "fish": false,
+        "polutry": false
+    },
+    "week": {
+        "number": 7,
+        "plan": {
+            "monday": {
+                "day": 64,
+                "workout": true,
+                "carb": "low",
+                "breakfast": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "lunch": {
+                    "name": "Ham and Swiss Roll Ups",
+                    "isEaten": true,
+                    "img": null
+                },
+                "dinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "mealAfterDinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "supper": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                }
+            },
+            "tuesday": {
+                "day": 65,
+                "workout": true,
+                "carb": "low",
+                "breakfast": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "lunch": {
+                    "name": "Ham and Swiss Roll Ups",
+                    "isEaten": true,
+                    "img": null
+                },
+                "dinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "mealAfterDinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "supper": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                }
+            },
+            "wednesday": {
+                "day": 66,
+                "workout": true,
+                "carb": "low",
+                "breakfast": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "lunch": {
+                    "name": "Ham and Swiss Roll Ups",
+                    "isEaten": true,
+                    "img": null
+                },
+                "dinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "mealAfterDinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "supper": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                }
+            },
+            "thursday": {
+                "day": 67,
+                "workout": true,
+                "carb": "low",
+                "breakfast": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "lunch": {
+                    "name": "Ham and Swiss Roll Ups",
+                    "isEaten": true,
+                    "img": null
+                },
+                "dinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "mealAfterDinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "supper": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                }
+            },
+            "friday": {
+                "day": 68,
+                "workout": true,
+                "carb": "low",
+                "breakfast": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "lunch": {
+                    "name": "Ham and Swiss Roll Ups",
+                    "isEaten": true,
+                    "img": null
+                },
+                "dinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "mealAfterDinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "supper": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                }
+            },
+            "saturday": {
+                "day": 69,
+                "workout": true,
+                "carb": "low",
+                "breakfast": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "lunch": {
+                    "name": "Ham and Swiss Roll Ups",
+                    "isEaten": true,
+                    "img": null
+                },
+                "dinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "mealAfterDinner": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                },
+                "supper": {
+                    "name": "Body Shake",
+                    "isEaten": true,
+                    "img": "/images/body_shake.svg"
+                }
+            },
+            "sunday": {
+                "day": 70
+            }
+        }
+    }
+}

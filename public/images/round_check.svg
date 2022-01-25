@@ -1,0 +1,15 @@
+<svg id="Vector_Smart_Object" data-name="Vector Smart Object" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="16" viewBox="0 0 17 16">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 5 5">
+      <image width="5" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABHNCSVQICAgIfAhkiAAAAE9JREFUCFtNyLENRGAYAND3DyERN4kRrtMT/VmC20EhalHawDiW0HwiUXjlSzEUXmo06ckMMyosd5bYkGNCd+cPI1a0+iNSRPD/fLHj1B8urEcWJlrrZ+UAAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="8.095" cy="8" rx="8.095" ry="8" fill="#ff801a"/>
+  <g id="Vector_Smart_Object-2" data-name="Vector Smart Object">
+    <g id="Vector_Smart_Object-3" data-name="Vector Smart Object" transform="translate(1.592 -2.607)">
+      <path id="check-mark-6-icon" d="M1.647,8.674l1.177-1.1a22.687,22.687,0,0,1,3.8,2.3,32.948,32.948,0,0,1,8.4-7.266l.383.889c-2.947,2.6-5.1,5.486-8.212,11.111A59.277,59.277,0,0,0,1.647,8.674Z"/>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M3.238,6.067l1.177-1.1a22.7,22.7,0,0,1,3.8,2.3A32.934,32.934,0,0,1,16.617,0L17,.889C14.053,3.485,11.9,6.376,8.788,12A59.206,59.206,0,0,0,3.238,6.067Z" fill="#fff"/>
+  </g>
+  <rect id="Vector_Smart_Object-4" data-name="Vector Smart Object" width="4.048" height="4" transform="translate(12.952)" fill="url(#pattern)"/>
+</svg>

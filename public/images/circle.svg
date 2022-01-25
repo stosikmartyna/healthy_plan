@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 0 0">
+      <image/>
+    </pattern>
+  </defs>
+  <g id="Happy2" transform="translate(-1693 -602)">
+    <g id="Happy2-2" data-name="Happy2" transform="translate(1693 602)">
+      <rect id="Layer_2" data-name="Layer 2" fill="url(#pattern)"/>
+      <g id="Ellipse_2" data-name="Ellipse 2" fill="none" stroke="#dbdbdb" stroke-width="2">
+        <circle cx="16" cy="16" r="16" stroke="none"/>
+        <circle cx="16" cy="16" r="15" fill="none"/>
+      </g>
+      <path id="Happy2-3" data-name="Happy2" d="M20.8,9c.883,0,1.6,1.075,1.6,2.4s-.717,2.4-1.6,2.4-1.6-1.075-1.6-2.4S19.917,9,20.8,9ZM11.2,9c.883,0,1.6,1.075,1.6,2.4s-.717,2.4-1.6,2.4-1.6-1.075-1.6-2.4S10.317,9,11.2,9ZM16,25c-4.171,0-7.635-3.5-8-7.957a16.121,16.121,0,0,0,16,0C23.635,21.507,20.171,25,16,25Z" fill="#dbdbdb"/>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M1693,618a16,16,0,1,1,16,16A16,16,0,0,1,1693,618Z" fill="#c2c2c2"/>
+  </g>
+</svg>
