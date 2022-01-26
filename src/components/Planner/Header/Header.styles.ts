@@ -5,7 +5,7 @@ export const Container = styled.div`
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: .75rem 0;
+    padding: 1.5rem 0;
     margin: 0 auto;
     width: 90%;
 `;
@@ -36,18 +36,31 @@ export const SliderWrapper = styled.div`
         color: ${colors.orange};
         font-size: 48px;
         margin: 0 2rem;
+        text-align: center;
     }
 `;
 
-export const Button = styled.button`
-    background-color: ${colors.backgroundGrey};
+interface ButtonProps {
+    disabled: boolean;
+}
+
+export const Button = styled.button<ButtonProps>`
+    align-items: center;
+    background-color: ${({disabled}) => disabled ? `${colors.calendarBorder}` : `${colors.backgroundGrey}`};
     border: 1px solid ${colors.borderGrey};
     border-radius: 5px;
+    cursor: pointer;
+    display: flex;
     padding: 0 .6rem;
+    transition: border-color .2s ease-in-out;
+
+    :hover {
+        border-color: ${colors.textGrey};
+    }
 `;
 
 export const ArrowIcon = styled.img`
-    width: 6px;
+    width: 10px;
 `;
 
 export const ProteinsWrapper = styled.div`
@@ -70,6 +83,6 @@ interface IconProps {
 }
 
 export const Icon = styled.img<IconProps>`
+    background-image: ${({isChecked}) => !isChecked && `url('./images/slash.svg')`};
     margin-right: .75rem;
-    background-image: ${({isChecked}) => !isChecked && `url('./images/slash.svg')`}
 `;

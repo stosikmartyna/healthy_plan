@@ -6,12 +6,17 @@ export const Container = styled.div`
     justify-content: space-between;
     margin: 30px auto;
     width: 90%;
+
+    div:first-child {
+        margin: 0;
+    }
 `;
 
 export const Box = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 20px;
 
     h3 {
         color: ${colors.textGrey};

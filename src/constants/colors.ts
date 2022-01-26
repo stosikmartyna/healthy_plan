@@ -5,6 +5,7 @@ export const colors = {
     verticalGrey: '#E1E1E1',
     textGrey: '#828282',
     navbarText: '#7C7C7C',
+    navbarBorder: '#EAEAEA',
     tdBorderBottomGrey: '#D2D2D2',
     green: '#B2C200',
     orange: '#FF801A',

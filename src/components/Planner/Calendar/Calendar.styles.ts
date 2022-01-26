@@ -23,20 +23,20 @@ export const Table = styled.table`
 
     th:nth-child(1) {
         background-color: ${colors.calendarBorder};
-        border: none;
-
-        :hover {
-            border: none;
-        }
+        border: 2px solid transparent;
     }
 
     th:last-child {
-        border-right: none;
+        border: 2px solid transparent;
 
         :hover {
-            border-right: 2px solid ${colors.orange};
+            border: 2px solid ${colors.orange};
             color: ${colors.orange};
         }
+    }
+
+    tbody {
+        position: relative;
     }
 `;
 
@@ -86,7 +86,6 @@ export const Text = styled.span`
 
 export const MealImg = styled.img`
     margin: 0 auto;
-    width: 60%;
 `;
 
 export const RoundCheckIcon = styled.img`
@@ -94,6 +93,7 @@ export const RoundCheckIcon = styled.img`
     position: absolute;
     right: 0;
     top: 0;
+    margin: .5rem .75rem 0 0;
     width: 20px;
 `;
 
@@ -112,14 +112,21 @@ export const CarbCell = styled.td`
 export const SundayColumn = styled.td`
     align-items: center;
     display: flex;
-    /* position: absolute; */
+    position: absolute;
+    justify-content: center;
+    right: -110px;
+    text-transform: uppercase;
+    top: 200px;
     transform: rotate(-90deg);
+    width: max-content;
 
     img {
-        width: 32px;
+        margin-right: 30px;
+        width: 35px;
     }
 
     span {
+        color: ${colors.tdBorderBottomGrey};
         font-size: 35px;
     }
 `;
@@ -127,10 +134,10 @@ export const SundayColumn = styled.td`
 //WORKOUT ROW
 export const WorkoutRow = styled.tr`
     background-color: ${colors.calendarBorder};
-    border-top: 2px solid ${colors.tdBorderBottomGrey};
-
+    
     td:first-child {
         color: ${colors.textGrey};
+        border-top: 2px solid ${colors.tdBorderBottomGrey};
         font-size: 13px;
         padding: 0 2rem;
         text-align: center;
@@ -139,6 +146,7 @@ export const WorkoutRow = styled.tr`
 
 export const WorkoutCell = styled.td`
     border-right: 1px solid ${colors.tdBorderBottomGrey};
+    border-top: 2px solid ${colors.tdBorderBottomGrey};
     padding: .5rem 0;
 `;
 
@@ -161,6 +169,7 @@ export const GreyWorkoutIcon = styled.div`
 //PRINT CELL
 export const PrintCell = styled.td`
     align-items: center;
+    border-top: 2px solid ${colors.tdBorderBottomGrey};
     color: ${colors.textGrey};
     display: flex;
 `;
