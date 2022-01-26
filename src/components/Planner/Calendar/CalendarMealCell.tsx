@@ -1,5 +1,6 @@
 import React from 'react';
 import { DailyMeal } from '../../../utils/types';
+import { MealCell, MealImg, MealWrapper, RoundCheckIcon, Text } from './Calendar.styles';
 
 interface CalendarMealCellProps {
     meal: DailyMeal;
@@ -7,10 +8,12 @@ interface CalendarMealCellProps {
 
 export const CalendarMealCell: React.FC<CalendarMealCellProps> = ({ meal }) => {
     return (
-        <td>
-            {meal.name}
-            {meal.img && <img src={meal.img} alt='body shake' />}
-            {meal.isEaten && <img src={'/images/round_check.svg'} alt='checked' />}
-        </td>
+        <MealCell>
+            <MealWrapper>
+                <Text>{meal.name}</Text>
+                {meal.isEaten && <RoundCheckIcon src={'/images/round_check.svg'} alt='checked' />}
+                {meal.img && <MealImg src={meal.img} alt='body shake' />}
+            </MealWrapper>
+        </MealCell>
     )
 }

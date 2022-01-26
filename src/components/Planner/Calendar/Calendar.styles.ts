@@ -5,24 +5,19 @@ export const Container = styled.div``;
 
 export const Table = styled.table`
     background-color: ${colors.white};
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     margin: 0 auto;
     width: 90%;
 
     th {
-        border-right: 2px solid ${colors.calendarBorder};
-        border-bottom: 2px solid ${colors.calendarBorder};
-        border-left: 2px solid transparent;
-        border-top: 2px solid transparent;
-        color: ${colors.green};
-        font-size: 24px;
-        font-weight: 200;
-        padding: .75rem 0;
-        text-transform: uppercase;
+        border: 2px solid ${colors.calendarBorder};
+        border-left: none;
+        border-top: none;
 
         :hover {
-            color: #FF801A;
             border: 2px solid ${colors.orange};
+            color: ${colors.orange};
         }
     }
 
@@ -36,49 +31,71 @@ export const Table = styled.table`
     }
 
     th:last-child {
-        border-right: 2px solid transparent;
+        border-right: none;
 
         :hover {
-            border: 2px solid ${colors.orange};
+            border-right: 2px solid ${colors.orange};
+            color: ${colors.orange};
         }
-    }
-
-    /* td {
-        border-right: 2px solid ${colors.calendarBorder};
-        border-bottom: 2px solid ${colors.calendarBorder};
-        color: ${colors.textGrey};
-        font-size: 13px;
-        padding: 0 .3rem;
-        max-width: 126px;
-    } */
-
-    /* td > span {
-        margin-top: 10px;
-        margin-left: 15px;
-    } */
-
-    /* td > span, img {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    } */
-
-    /* td:first-child {
-        background-color: ${colors.calendarBorder};
-        border-right: none;
-        border-bottom: 2px solid ${colors.tdBorderBottomGrey};
-        font-size: 13px;
-        padding: 2rem 0;
-        max-width: 85px;
-        text-align: center;
-    } */
-
-    td:last-child {
-        border-right: none;
-        border-bottom: none;
     }
 `;
 
+export const DayCell = styled.th`
+    color: ${colors.green};
+    font-size: 24px;
+    font-weight: 200;
+    padding: .75rem 0;
+    text-transform: uppercase;
+    width: min-content;
+`;
+
+// MEAL TIME CELL
+interface MealTimeCellProps {
+    isLast?: boolean;
+}
+
+export const MealTimeCell = styled.td<MealTimeCellProps>`
+    background-color: ${colors.calendarBorder};
+    border-bottom: ${({isLast}) => isLast ? 'none' : `2px solid ${colors.tdBorderBottomGrey}`};
+    color: ${colors.textGrey};
+    text-align: center;
+`;
+
+// MEAL ROW
+export const MealRow = styled.tr``;
+
+export const MealCell = styled.td`
+    border-right: 2px solid ${colors.calendarBorder};
+    border-bottom: 2px solid ${colors.calendarBorder};
+    color: ${colors.textGrey};
+    height: 90px;
+    padding: .5rem .5rem 0 .5rem;
+    position: relative;
+`;
+
+export const MealWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+`;
+
+export const Text = styled.span`
+    width: 80%;
+`;
+
+export const MealImg = styled.img`
+    margin: 0 auto;
+    width: 60%;
+`;
+
+export const RoundCheckIcon = styled.img`
+    margin: .4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+`;
 
 // CARB ROW
 export const CarbRow = styled.tr`

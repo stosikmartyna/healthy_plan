@@ -1,6 +1,6 @@
 import React from 'react';
 import { Week } from '../../../utils/types';
-import { Container, Table, WorkoutRow, PrintCell, PrintWrapper, CarbRow, SundayColumn } from './Calendar.styles';
+import { Container, Table, WorkoutRow, PrintCell, PrintWrapper, CarbRow, SundayColumn, MealTimeCell, MealRow, DayCell } from './Calendar.styles';
 import { CalendarCarbCell } from './CalendarCarbCell';
 import { CalendarMealCell } from './CalendarMealCell';
 import { CalendarWorkoutCell } from './CalendarWorkoutCell';
@@ -17,19 +17,19 @@ export const Calendar: React.FC<CalendarProps> = ({ week }) => {
             <Table>
                 <thead>
                     <tr>
-                        <th />
-                        <th>Day {monday.day}</th>
-                        <th>Day {tuesday.day}</th>
-                        <th>Day {wednesday.day}</th>
-                        <th>Day {thursday.day}</th>
-                        <th>Day {friday.day}</th>
-                        <th>Day {saturday.day}</th>
-                        <th>Day {sunday.day}</th>
+                        <DayCell />
+                        <DayCell>Day {monday.day}</DayCell>
+                        <DayCell>Day {tuesday.day}</DayCell>
+                        <DayCell>Day {wednesday.day}</DayCell>
+                        <DayCell>Day {thursday.day}</DayCell>
+                        <DayCell>Day {friday.day}</DayCell>
+                        <DayCell>Day {saturday.day}</DayCell>
+                        <DayCell>Day {sunday.day}</DayCell>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>6:00AM</td>
+                    <MealRow>
+                        <MealTimeCell>6:00AM</MealTimeCell>
                         <CalendarMealCell meal={monday.breakfast} />
                         <CalendarMealCell meal={tuesday.breakfast} />
                         <CalendarMealCell meal={wednesday.breakfast} />
@@ -37,9 +37,9 @@ export const Calendar: React.FC<CalendarProps> = ({ week }) => {
                         <CalendarMealCell meal={friday.breakfast} />
                         <CalendarMealCell meal={saturday.breakfast} />
                         <td>{/* sunday */}</td>
-                    </tr>
-                    <tr>
-                        <td>9:00AM</td>
+                    </MealRow>
+                    <MealRow>
+                        <MealTimeCell>9:00AM</MealTimeCell>
                         <CalendarMealCell meal={monday.lunch} />
                         <CalendarMealCell meal={tuesday.lunch} />
                         <CalendarMealCell meal={wednesday.lunch} />
@@ -47,9 +47,9 @@ export const Calendar: React.FC<CalendarProps> = ({ week }) => {
                         <CalendarMealCell meal={friday.lunch} />
                         <CalendarMealCell meal={saturday.lunch} />
                         <td>{/* sunday */}</td>
-                    </tr>
-                    <tr>
-                        <td>12:00PM</td>
+                    </MealRow>
+                    <MealRow>
+                        <MealTimeCell>12:00PM</MealTimeCell>
                         <CalendarMealCell meal={monday.dinner} />
                         <CalendarMealCell meal={tuesday.dinner} />
                         <CalendarMealCell meal={wednesday.dinner} />
@@ -57,9 +57,9 @@ export const Calendar: React.FC<CalendarProps> = ({ week }) => {
                         <CalendarMealCell meal={friday.dinner} />
                         <CalendarMealCell meal={saturday.dinner} />
                         <td>{/* sunday */}</td>
-                    </tr>
-                    <tr>
-                        <td>3:00PM</td>
+                    </MealRow>
+                    <MealRow>
+                        <MealTimeCell>3:00PM</MealTimeCell>
                         <CalendarMealCell meal={monday.mealAfterDinner} />
                         <CalendarMealCell meal={tuesday.mealAfterDinner} />
                         <CalendarMealCell meal={wednesday.mealAfterDinner} />
@@ -67,9 +67,9 @@ export const Calendar: React.FC<CalendarProps> = ({ week }) => {
                         <CalendarMealCell meal={friday.mealAfterDinner} />
                         <CalendarMealCell meal={saturday.mealAfterDinner} />
                         <td>{/* sunday */}</td>
-                    </tr>
-                    <tr>
-                        <td>6:00PM</td>
+                    </MealRow>
+                    <MealRow>
+                        <MealTimeCell isLast={true}>6:00PM</MealTimeCell>
                         <CalendarMealCell meal={monday.supper} />
                         <CalendarMealCell meal={tuesday.supper} />
                         <CalendarMealCell meal={wednesday.supper} />
@@ -77,7 +77,7 @@ export const Calendar: React.FC<CalendarProps> = ({ week }) => {
                         <CalendarMealCell meal={friday.supper} />
                         <CalendarMealCell meal={saturday.supper} />
                         <td>{/* sunday */}</td>
-                    </tr>
+                    </MealRow>
                     <CarbRow>
                         <td />
                         <CalendarCarbCell carb={monday.carb} />
