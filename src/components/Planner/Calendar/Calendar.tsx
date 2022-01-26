@@ -1,6 +1,6 @@
 import React from 'react';
 import { Week } from '../../../utils/types';
-import { Container, Table, SundayColumn, WorkoutRow, PrintCell } from './Calendar.styles';
+import { Container, Table, WorkoutRow, PrintCell, PrintWrapper, CarbRow, SundayColumn } from './Calendar.styles';
 import { CalendarCarbCell } from './CalendarCarbCell';
 import { CalendarMealCell } from './CalendarMealCell';
 import { CalendarWorkoutCell } from './CalendarWorkoutCell';
@@ -78,7 +78,7 @@ export const Calendar: React.FC<CalendarProps> = ({ week }) => {
                         <CalendarMealCell meal={saturday.supper} />
                         <td>{/* sunday */}</td>
                     </tr>
-                    <tr>
+                    <CarbRow>
                         <td />
                         <CalendarCarbCell carb={monday.carb} />
                         <CalendarCarbCell carb={tuesday.carb} />
@@ -86,11 +86,12 @@ export const Calendar: React.FC<CalendarProps> = ({ week }) => {
                         <CalendarCarbCell carb={thursday.carb} />
                         <CalendarCarbCell carb={friday.carb} />
                         <CalendarCarbCell carb={saturday.carb} />
-                        <SundayColumn>
+                        <td />
+                        {/* <SundayColumn>
                             <img src='./images/circle.svg' alt='circle icon' />
                             <span>Guilt-free day</span>
-                        </SundayColumn>
-                    </tr>
+                        </SundayColumn> */}
+                    </CarbRow>
                     <WorkoutRow>
                         <td>Workout</td>
                         <CalendarWorkoutCell isWorkout={monday.workout} />
@@ -100,8 +101,10 @@ export const Calendar: React.FC<CalendarProps> = ({ week }) => {
                         <CalendarWorkoutCell isWorkout={friday.workout} />
                         <CalendarWorkoutCell isWorkout={saturday.workout} />
                         <PrintCell>
-                            <img src='./images/print.svg' alt='print icon' />
-                            <span>Print</span>
+                            <PrintWrapper>
+                                <img src='./images/print.svg' alt='print icon' />
+                                <span>Print</span>
+                            </PrintWrapper>
                         </PrintCell>
                     </WorkoutRow>
                 </tbody>

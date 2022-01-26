@@ -43,27 +43,27 @@ export const Table = styled.table`
         }
     }
 
-    td {
+    /* td {
         border-right: 2px solid ${colors.calendarBorder};
         border-bottom: 2px solid ${colors.calendarBorder};
         color: ${colors.textGrey};
         font-size: 13px;
         padding: 0 .3rem;
         max-width: 126px;
-    }
+    } */
 
-    td > span {
+    /* td > span {
         margin-top: 10px;
         margin-left: 15px;
-    }
+    } */
 
-    td > span, img {
+    /* td > span, img {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+    } */
 
-    td:first-child {
+    /* td:first-child {
         background-color: ${colors.calendarBorder};
         border-right: none;
         border-bottom: 2px solid ${colors.tdBorderBottomGrey};
@@ -71,12 +71,25 @@ export const Table = styled.table`
         padding: 2rem 0;
         max-width: 85px;
         text-align: center;
-    }
+    } */
 
     td:last-child {
         border-right: none;
         border-bottom: none;
     }
+`;
+
+
+// CARB ROW
+export const CarbRow = styled.tr`
+    background-color: ${colors.calendarBorder};
+    color: ${colors.textGrey};
+`;
+
+export const CarbCell = styled.td`
+    border-right: 1px solid ${colors.tdBorderBottomGrey};
+    padding: .8rem 0;
+    text-align: center;
 `;
 
 export const SundayColumn = styled.td`
@@ -94,16 +107,55 @@ export const SundayColumn = styled.td`
     }
 `;
 
-export const PrintCell = styled.td`
-    align-items: center;
-    display: flex;
+//WORKOUT ROW
+export const WorkoutRow = styled.tr`
+    background-color: ${colors.calendarBorder};
+    border-top: 2px solid ${colors.tdBorderBottomGrey};
 
-    img {
-        margin-right: 5px;
+    td:first-child {
+        color: ${colors.textGrey};
+        font-size: 13px;
+        padding: 0 2rem;
+        text-align: center;
     }
 `;
 
-export const WorkoutRow = styled.tr`
-    background-color: ${colors.calendarBorder};
+export const WorkoutCell = styled.td`
+    border-right: 1px solid ${colors.tdBorderBottomGrey};
+    padding: .5rem 0;
+`;
 
+export const WorkoutCellImgWrapper = styled.div`
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: min-content;
+
+    img:first-child {
+        margin-right: 10px;
+    }
+`;
+
+export const GreyWorkoutIcon = styled.div`
+    margin: 0 auto;
+    width: min-content;
+`;
+
+//PRINT CELL
+export const PrintCell = styled.td`
+    align-items: center;
+    color: ${colors.textGrey};
+    display: flex;
+`;
+
+export const PrintWrapper = styled.div`
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    padding: .5rem 1.5rem;
+    width: min-content;
+
+    img {
+        margin-right: 10px;
+    }
 `;
