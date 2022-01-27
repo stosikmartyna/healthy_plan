@@ -171,6 +171,7 @@ export const PrintCell = styled.td`
     align-items: center;
     border-top: 2px solid ${colors.tdBorderBottomGrey};
     color: ${colors.textGrey};
+    cursor: pointer;
     display: flex;
 `;
 

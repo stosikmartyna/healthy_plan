@@ -1,5 +1,5 @@
 import React from 'react';
-import { capitalizeFirstLetter } from './Calendar.helpers';
+import { transformTextToUpperCase } from './Calendar.helpers';
 import { CarbCell } from './Calendar.styles';
 
 interface CalendarCarbCellProps {
@@ -7,10 +7,11 @@ interface CalendarCarbCellProps {
 }
 
 export const CalendarCarbCell: React.FC<CalendarCarbCellProps> = ({ carb }) => {
+    const textToTransform = `${carb}-carb`;
     return (
         <CarbCell>
             <span>
-                {capitalizeFirstLetter(carb)}-carb
+                {transformTextToUpperCase(textToTransform)}
             </span>
         </CarbCell>
     )

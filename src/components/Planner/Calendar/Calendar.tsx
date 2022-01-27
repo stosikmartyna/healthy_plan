@@ -15,7 +15,7 @@ import {
     MealRow, 
     DayCell
  } from './Calendar.styles';
- 
+
 interface CalendarProps {
     week: Week;
 }
@@ -106,7 +106,7 @@ export const Calendar: React.FC<CalendarProps> = ({ week }) => {
                         <CalendarWorkoutCell isWorkout={friday.workout} />
                         <CalendarWorkoutCell isWorkout={saturday.workout} />
                         <PrintCell>
-                            <PrintWrapper>
+                            <PrintWrapper onClick={() => window.print()}>
                                 <img src='./images/print.svg' alt='print icon' />
                                 <span>Print</span>
                             </PrintWrapper>
