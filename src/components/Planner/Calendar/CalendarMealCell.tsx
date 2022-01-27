@@ -12,7 +12,7 @@ export const CalendarMealCell: React.FC<CalendarMealCellProps> = ({ meal }) => {
             <MealWrapper>
                 <Text>{meal.name}</Text>
                 {meal.isEaten && <RoundCheckIcon src={'/images/round_check.svg'} alt='checked' />}
-                {meal.img && <MealImg src={meal.img} alt='body shake' />}
+                {meal.img && <MealImg src={meal.img} isActive={false} alt='body shake' />}
             </MealWrapper>
         </MealCell>
     )

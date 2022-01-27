@@ -84,8 +84,13 @@ export const Text = styled.span`
     width: 80%;
 `;
 
-export const MealImg = styled.img`
+interface MealImgProps {
+    isActive: boolean;
+}
+
+export const MealImg = styled.img<MealImgProps>`
     margin: 0 auto;
+    filter: ${({isActive}) => isActive ? 'grayscale(0)' : 'grayscale(1)'};
 `;
 
 export const RoundCheckIcon = styled.img`
